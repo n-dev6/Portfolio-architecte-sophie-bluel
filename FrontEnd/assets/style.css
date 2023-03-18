@@ -139,7 +139,7 @@ li:hover {
 }
 #contact {
 	width: 50%;
-margin: auto;
+	margin: auto;
 }
 #contact > * {
 	text-align: center;
@@ -185,4 +185,39 @@ footer nav ul {
 	justify-content: flex-end;
 	margin: 2em
 }
+.filtres{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 5%;
+}
+button{
+	box-sizing: border-box;
+	min-width: 100px;
+	height: 37px;
+	border: 1px solid #1D6154;
+	border-radius: 60px;
+	background-color: #fff;
+	font-family: Syne;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: center;
+	color:#1D6154;
 
+}
+
+button:hover {
+	background-color: #1D6154;
+	color: #fff;
+  }
+
+.reset-password {
+	display:flex;
+	justify-content: center;
+}
+
+#login-text{
+	margin-top:20%
+}
