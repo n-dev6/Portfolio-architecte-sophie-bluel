@@ -221,3 +221,33 @@ button:hover {
 #login-text{
 	margin-top:20%
 }
+
+.fa-sharp{
+	color:white;
+}
+
+#paragraphe-white{
+	color: white;
+}
+
+.admin-editor-toolbar{
+	display: none;
+
+}
+
+.admin-editor-toolbar.llogedIn{
+	background:black;
+	width:100%;
+	display: flex;
+	justify-content: center;
+	height: 60px;
+	align-items: center;
+	gap:2%
+}
+
+.white-black-button{
+	background-color: white;
+  	color: black;
+	border: none;
+	font-size: 12px;
+}
