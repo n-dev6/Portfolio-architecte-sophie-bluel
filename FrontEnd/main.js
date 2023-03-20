@@ -2,12 +2,11 @@
 const workEndPoint = "http://localhost:5678/api/works";
 const categorieEndPoint = "http://localhost:5678/api/categories";
 
-
 document.addEventListener("DOMContentLoaded", () => {
+
   fetchWorks();
   const buttonAll = document.querySelector('.allButton');
   buttonAll.addEventListener('click', () => fetchWorks());
-  
   fetch(categorieEndPoint)
   .then(response => response.json())
   .then(categories => {
@@ -29,13 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
         // filtrer les projets en fonction de la catégorie sélectionnée
         // (code à implémenter)
       });
+    
       
       // ajouter le bouton à l'élément parent
       buttonContainer.appendChild(button);
     });
+  
   })
   .catch(error => console.error(error));
+
 });
+
 
 
 // récupérer les données de l'API

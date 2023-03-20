@@ -235,7 +235,7 @@ button:hover {
 
 }
 
-.admin-editor-toolbar.llogedIn{
+.admin-editor-toolbar.loggedIn{
 	background:black;
 	width:100%;
 	display: flex;
@@ -250,4 +250,67 @@ button:hover {
   	color: black;
 	border: none;
 	font-size: 12px;
+}
+
+.logout-head-paragraphe{
+	display: none;
+}
+
+.logout-head-paragraphe.loggedIn{
+	display: inline;
+}
+
+.login-head-paragraphe{
+	display: inline;
+}
+
+.login-head-paragraphe.loggedIn{
+	display: none;
+}
+
+.button.invisible{
+	display: none;
+}
+
+.modify-figure-text{
+	display: none;
+}
+
+.modify-figure-text.loggedIn{
+	display: inline;
+	margin-top: 20%;
+	
+}
+.logged-modify-text{
+	display:none;
+}
+
+.logged-modify-text.loggedIn{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.projet-modify-text{
+	margin-left: -1%;
+	margin-top: 1%;
+}
+
+.fa-pen-to-square {
+	color: black;
+	margin-left: 2%;
+	margin-top: 1%;
+  }
+.logo-modify-login{
+	display:none;
+}
+.logo-modify-login.loggedIn{
+	display:inline;
+	color: black;
+	margin-left:8%;
+	margin-top: 2%;
+}
+
+.admin-editor-toolbar i{
+	color:white;
+	margin-top: -0.1%;
 }

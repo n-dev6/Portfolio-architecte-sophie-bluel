@@ -11,7 +11,8 @@
 	<link rel="stylesheet" href="./assets/style.css">
 	<script src="https://kit.fontawesome.com/9061c7d096.js" crossorigin="anonymous"></script>
 </head>
-<script src="filtres.js"></script>
+<script src="main.js"></script>
+<script src="login.js"></script>
 <body>
 	<div class="admin-editor-toolbar">
 		<i class="fa-sharp fa-regular fa-pen-to-square"></i>
@@ -22,9 +23,10 @@
 	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
 	<nav>
 		<ul>
-			<li>projets</li>
+			<li><a href = 'index.html'>projets</a></li>
 			<li>contact</li>
-			<li><a href = 'login.html'>login</a></li>
+			<li class ="login-head-paragraphe"><a href = 'login.html'>login</a></li>
+			<li><a href="#" class="logout-head-paragraphe">Logout</a></li>
 			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
@@ -33,6 +35,8 @@
 	<section id="introduction">
 		<figure>
 			<img src="./assets/images/sophie-bluel.png" alt="">
+			<div class ="logo-modify-login"><i class="fa-sharp fa-regular fa-pen-to-square"></i></div>
+			<li class ="modify-figure-text"><a href = "#"></a>modifier</li>	
 		</figure>
 		<article>
 			<h2>Designer d'espace</h2>
@@ -42,7 +46,11 @@
 		</article>
 	</section>
 	<section id="portfolio">
-		<h2>Mes Projets</h2>
+		<div class ="logged-modify-text">
+			<h2>Mes Projets</h2>
+			<i class="fa-sharp fa-regular fa-pen-to-square"></i>
+			<li class ="projet-modify-text"><a href = "#"></a>modifier</li>			
+		</div>
 		<div class ="filtres">
 			<div class ="button">
 			<button class = "allButton">Tous</button>
