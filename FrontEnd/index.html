@@ -13,12 +13,42 @@
 </head>
 <script src="main.js"></script>
 <script src="login.js"></script>
+<script src ="modal.js"></script>
 <body>
 	<div class="admin-editor-toolbar">
 		<i class="fa-sharp fa-regular fa-pen-to-square"></i>
 		<p id = "paragraphe-white">Mode édition</p>
 		<button class ="white-black-button">publier les changements</button>
+	</div>	
+
+	<div class="modal">
+
+  		<div class= "modal-content">
+			<span class= "close">&times;</span>
+			<h3 id="modal-title">Galerie photo</h3>
+			<div class ="gallery-modal"></div>
+			<hr id = "grey-bar-button">
+			<button class ="button-add-photo">Ajouter une photo</button>
+			<a class="remove-modal-gallery"> Supprimer la galerie</a>
+  		</div>
+
+		<div class ="modal-content-photo">
+			<span class ="close close-content-photo">&times;</span>
+			<h3 id ="modal-title">Ajout photo</h3>			
+			<form id="add-projet-form" action="" method="post">
+				<div class ="add-picture">
+					<button class ="button-add-picture"> ajouter photo</button>
+				</div>
+				<label for="title-projet">Titre</label>
+				<input type="title-projet" name="title" id="title">
+				<label for="categorie-projet">Categorie</label>
+				<input type="categorie-projet" name="categories" id="categories">
+				<button class="submit-projet">Valider</button>
+			</form>
+		</div>
+
 	</div>
+
 <header>
 	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
 	<nav>
@@ -26,7 +56,7 @@
 			<li><a href = 'index.html'>projets</a></li>
 			<li>contact</li>
 			<li class ="login-head-paragraphe"><a href = 'login.html'>login</a></li>
-			<li><a href="#" class="logout-head-paragraphe">Logout</a></li>
+			<li><a href="#" class="logout-head-paragraphe">logout</a></li>
 			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
@@ -36,7 +66,7 @@
 		<figure>
 			<img src="./assets/images/sophie-bluel.png" alt="">
 			<div class ="logo-modify-login"><i class="fa-sharp fa-regular fa-pen-to-square"></i></div>
-			<li class ="modify-figure-text"><a href = "#"></a>modifier</li>	
+			<li class ="modify-figure-text"><a class = "modify-figure-text"></a>modifier</li>	
 		</figure>
 		<article>
 			<h2>Designer d'espace</h2>
@@ -49,7 +79,7 @@
 		<div class ="logged-modify-text">
 			<h2>Mes Projets</h2>
 			<i class="fa-sharp fa-regular fa-pen-to-square"></i>
-			<li class ="projet-modify-text"><a href = "#"></a>modifier</li>			
+			<li class ="projet-modify-text"><a class = "projet-modify-text"></a>modifier</li>			
 		</div>
 		<div class ="filtres">
 			<div class ="button">

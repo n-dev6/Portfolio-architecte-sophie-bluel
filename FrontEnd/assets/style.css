@@ -252,8 +252,13 @@ button:hover {
 	font-size: 12px;
 }
 
+.button{
+	cursor: pointer;
+}
+
 .logout-head-paragraphe{
 	display: none;
+	cursor: pointer;
 }
 
 .logout-head-paragraphe.loggedIn{
@@ -262,6 +267,7 @@ button:hover {
 
 .login-head-paragraphe{
 	display: inline;
+	cursor: pointer;
 }
 
 .login-head-paragraphe.loggedIn{
@@ -274,6 +280,7 @@ button:hover {
 
 .modify-figure-text{
 	display: none;
+	cursor:pointer;
 }
 
 .modify-figure-text.loggedIn{
@@ -293,6 +300,7 @@ button:hover {
 .projet-modify-text{
 	margin-left: -1%;
 	margin-top: 1%;
+	cursor:pointer;
 }
 
 .fa-pen-to-square {
@@ -313,4 +321,105 @@ button:hover {
 .admin-editor-toolbar i{
 	color:white;
 	margin-top: -0.1%;
+}
+
+/* css de la modale */
+.close{
+	display: flex;
+    justify-content: flex-end;
+	font-size: 32px;
+	margin-left:2%;
+	margin-right: 2%;
+    margin-top: 1%;
+	cursor:pointer;
+}
+
+
+.modal{
+	display: none;
+    background: #ffffff;
+    border-radius: 10px;    
+	width:45%;
+	Height:900px;
+    position: fixed;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+#modal-title{
+	color: black;
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+}
+
+.gallery-modal {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	margin: 5%;
+
+  }
+  
+.gallery-modal figure {
+	width: 100%;
+
+  }
+.work-image-modal{
+	width: 70%;
+}
+
+.button-add-photo{
+	display: flex;
+	justify-content: center;
+	margin-left: 35%;
+	width: 30%;
+	height: 50px;
+	align-items: center;
+}
+
+#grey-bar-button{
+	width: 50%;
+}
+
+.remove-modal-gallery{
+	color: red;
+	display: flex;
+	justify-content: center;
+	margin-top: 3%;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.modal-content-photo{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+#add-projet-form{
+	display: flex;
+	flex-direction: column;
+}
+
+input{
+	display: flex;
+	justify-content: center;
+	width: 420px;
+	height: 51px;
+	left: 510px;
+	top: 1011px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	border: none;
+}
+
+.add-picture{
+	display:flex;
+	justify-content: center;
+}
+
+.close-back-span{
+	
 }

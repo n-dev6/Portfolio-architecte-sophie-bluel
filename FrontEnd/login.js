@@ -56,8 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       adminToolbar.classList.add('loggedIn');
       modifyFigure.classList.add('loggedIn');
       loggedModifyText.classList.add('loggedIn');
-      loggedModifyIcon.classList.add('loggedIn');
-      
+      loggedModifyIcon.classList.add('loggedIn');    
       buttonContainer.classList.add('invisible');
       console.log(token);
       console.log("logged");

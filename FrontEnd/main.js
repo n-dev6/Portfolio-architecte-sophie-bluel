@@ -56,7 +56,6 @@ function fetchWorks(categoryId){
       // transformation du work en figure html   
       const figure = createFigure(work);
       gallery.appendChild(figure);
-      
     });
   });
 }
