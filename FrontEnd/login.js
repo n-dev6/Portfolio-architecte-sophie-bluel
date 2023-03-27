@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const adminToolbar = document.querySelector(".admin-editor-toolbar");
   const loginParagraphe = document.querySelector(".login-head-paragraphe");
   const logoutParagraphe = document.querySelector(".logout-head-paragraphe");
+  const modal = document.querySelector('.modal');
+ 
+  
 
   if (window.location.pathname.includes('login.html')) {
     loginForm.addEventListener('submit', (event) => {
@@ -60,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
       buttonContainer.classList.add('invisible');
       console.log(token);
       console.log("logged");
+      modal.style.display ='none'
       
     } else {
       

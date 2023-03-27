@@ -2,7 +2,11 @@
 const workEndPoint = "http://localhost:5678/api/works";
 const categorieEndPoint = "http://localhost:5678/api/categories";
 
+
 document.addEventListener("DOMContentLoaded", () => {
+  
+  const modal = document.querySelector('.modal');
+  modal.style.display = 'none';
 
   fetchWorks();
   const buttonAll = document.querySelector('.allButton');
