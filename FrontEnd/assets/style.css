@@ -551,3 +551,16 @@ label .categorie-projet{
 	text-align: center;
 
 }
+
+
+.fa.fa-trash{
+	background-color: black;
+	color: white;
+	position: relative;
+	margin-top: -19%;
+
+}
+
+body.modal-open {
+	background-color: rgba(0, 0, 0, 0.5);
+  }

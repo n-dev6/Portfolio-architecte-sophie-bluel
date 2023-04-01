@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const modal = document.querySelector('.modal');
   modal.style.display = 'none';
 
+
   fetchWorks();
   const buttonAll = document.querySelector('.allButton');
   buttonAll.addEventListener('click', () => fetchWorks());
