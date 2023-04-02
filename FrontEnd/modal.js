@@ -115,6 +115,11 @@ const categorieEndPoint = "http://localhost:5678/api/categories";
       loadCategorieModal()
       categorieAlreadyLoad = true
       }
+      updateModal()
+      form = document.querySelector('#add-projet-form')
+      form.reset()
+      removePreviewImage(previewImage);
+      hidingPreviewPhoto.style.display = 'flex';
     });
 
     closeContent.addEventListener('click',() =>{
@@ -293,14 +298,16 @@ function loadCategorieModal(){
         const deleteIcon = document.createElement('i')
         deleteIcon.className = 'fa fa-trash'
         deleteIcon.style.cursor = 'pointer'; // ajout d'un style cursor pointer pour indiquer que l'icône est cliquable
-        deleteIcon.addEventListener('click', () => {
+        deleteIcon.addEventListener('click', (event) => {
           // supprimer le travail associé au clic sur l'icône de la corbeille
           deleteWork(work.id);
           // supprimer la figure correspondante de la page
           galleryModal.removeChild(figure);
-          updateModal();
+
           const successBtn = document.querySelector("btn-success")
           successBtn.style.display='block'
+         
+          
         });
         figure.appendChild(deleteIcon);
       });

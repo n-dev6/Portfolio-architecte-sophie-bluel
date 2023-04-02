@@ -135,6 +135,7 @@ li:hover {
 
 .gallery img {
 	width: 100%;
+	min-height: 488px;
 
 }
 #contact {
@@ -371,6 +372,8 @@ button:hover {
   }
 .work-image-modal{
 	width: 70%;
+	min-height: 175px;
+
 }
 
 .button-add-photo{
@@ -556,8 +559,9 @@ label .categorie-projet{
 .fa.fa-trash{
 	background-color: black;
 	color: white;
-	position: relative;
+	position: absolute;
 	margin-top: -19%;
+	margin-left: 11%;
 
 }
 
