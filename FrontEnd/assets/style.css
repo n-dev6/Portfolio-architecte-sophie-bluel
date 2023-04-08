@@ -146,6 +146,7 @@ li:hover {
 	text-align: center;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 
 }
 #contact h2{
@@ -208,6 +209,7 @@ button{
 	letter-spacing: 0em;
 	text-align: center;
 	color:#1D6154;
+	
 
 }
 
@@ -259,6 +261,12 @@ button:hover {
 
 .button{
 	cursor: pointer;
+	display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    gap: 1%;
+    width: 100%;
+    justify-content: center;
 }
 
 .logout-head-paragraphe{
@@ -351,6 +359,7 @@ button:hover {
 	margin-left: 7%;
 	align-items: center;
 	flex-direction: column;
+	
 }
 
 #modal-title{
@@ -362,16 +371,19 @@ button:hover {
 
 .gallery-modal {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	margin-left: 5%;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 2%;
+    max-height: 550px;
+    overflow-y: scroll;
+    gap: 2%;
   }
   
 .gallery-modal figure {
-	width: 100%;
+	position: relative;
 
   }
 .work-image-modal{
-	width: 70%;
+	width: 100%;
 	min-height: 175px;
 
 }
@@ -404,6 +416,9 @@ button:hover {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+}
+.modal-content{
+    background-color: white;
 }
 
 
@@ -453,6 +468,7 @@ select{
 .add-picture .fa-sharp{
 	background: #B9C5CC;
 	color: grey;
+	    margin-bottom: 4%;
 }
 
 .button-add-picture{
@@ -461,6 +477,7 @@ select{
 	color:#306685;
 	border: none;
 	width: 60%;
+	margin-bottom: 5%;
 }
 
 .close-back-span{
@@ -531,6 +548,7 @@ label .categorie-projet{
 
 
 #btn-error{
+	width: 27%;
 	display: none;
 	color: red;
 	background-color: #f8d7da;
@@ -538,12 +556,14 @@ label .categorie-projet{
 	padding: 10px;
 	margin-bottom: 10px;
 	text-align: center;
-	text-align: center;
 	margin-top: 2%;
+	margin-top: -10%;
+    margin-left: 35%;
 	
 }
 
 #btn-success{
+	width: 27%;
 	display: none;
 	color: green;
 	background-color: #d4edda;
@@ -551,20 +571,21 @@ label .categorie-projet{
 	padding: 10px;
 	margin-bottom: 10px;
 	text-align: center;
-	text-align: center;
+	margin-top: -10%;
+    margin-left: 35%;
 
 }
 
 
 .fa.fa-trash{
 	background-color: black;
-	color: white;
-	position: absolute;
-	margin-top: -19%;
-	margin-left: 11%;
-
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 body.modal-open {
 	background-color: rgba(0, 0, 0, 0.5);
   }
+
